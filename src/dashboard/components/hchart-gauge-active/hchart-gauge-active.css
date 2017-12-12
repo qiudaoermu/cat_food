@@ -1,0 +1,4 @@
+.hchart-gauge-active{
+    position: absolute;
+    transform:translateZ(0);
+}

@@ -1,0 +1,70 @@
+li,ul{
+  list-style: none
+}
+a{
+  text-decoration: none;
+  color:#796969;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+ul{
+  width: 70%;
+}
+li{
+  padding: 0 20px;
+
+  border: 1px solid #fff;
+  display:inline-block;
+  float: left;
+  margin: 10px;
+  margin-top:20px;
+  line-height: 220px;
+
+  height: 120px;
+  color:#fff;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition-duration: 200ms;
+  transition-property: transform, box-shadow, margin, opacity, width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+
+
+  background:url(http://www.yidengxuetang.com/recruit/images/8.png)
+}
+.echartLine{
+  background:url(./backImage/049A13F3-89D1-405B-86D1-D752FFE6F9E2.png) no-repeat;
+  background-size:contain;
+}
+.echartPie{
+  background: url(./backImage/20171212-105040@2x.png);
+  background-size: contain
+}
+.hchartGuageActive{
+  background: url(./backImage/20171212-105336@2x.png);
+  background-size: cover
+}
+.hchartGuageAdvanc{
+  background: url(./backImage/20171212-105812@2x.png);
+  background-size: cover
+}
+.hchartPie{
+  background: url(./backImage/20171212-105920@2x.png) no-repeat;
+  background-size: contain
+}
+.svgProgress{
+  background: url(./backImage/20171212-110020@2x.png);
+  background-size: contain
+}
+.MyDialog{
+  background: url(./backImage/20171212-110112@2x.png) no-repeat;
+  background-size: contain;
+}
+.number{
+  background: url(./backImage/20171212-110718@2x.png) no-repeat;
+  background-size: contain;
+}

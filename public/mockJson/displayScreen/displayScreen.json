@@ -1,0 +1,59 @@
+{
+  "code": 200,
+  "msg": "success",
+  "data": {
+    "chart1": [
+      {
+        "name": "服务器总量",
+        "value": 3
+      }],
+
+    "chart2": 200,
+    "chart3": 30,
+    "chart4":[
+      {"value":10},
+      {"value":90},
+      {"value":30},
+      {"value":20},
+      {"value":40},
+      {"value":20}
+    ],
+    "chart5":[
+      {"percent":20,"all":100,"hasUse":50,"notUse":80},
+      {"percent":20,"all":100,"hasUse":20,"notUse":80},
+      {"percent":50,"all":100,"hasUse":50,"notUse":80},
+      {"percent":50,"all":100,"hasUse":20,"notUse":80},
+      {"percent":43,"all":200,"hasUse":90,"notUse":10}
+    ],
+    "chartsRightTop":[
+      {"valueProgross":30},
+      {"valueN":30},
+      {"valueD":30},
+      {"valueW":30}
+
+    ],
+    "chartsRightMiddle":[
+      {"xAxisData":"周一","seriesOne":120,"serieTwo":220},
+      {"xAxisData":"周二","seriesOne":132,"serieTwo":142},
+      {"xAxisData":"周三","seriesOne":10,"serieTwo":211},
+      {"xAxisData":"周四","seriesOne":134,"serieTwo":234},
+      {"xAxisData":"周五","seriesOne":9,"serieTwo":290},
+      {"xAxisData":"周六","seriesOne":230,"serieTwo":30},
+      {"xAxisData":"周日","seriesOne":210,"serieTwo":310}
+
+
+    ],
+    "chartsRightMiddleName":
+    [
+      {"name":"流入"},
+      {"name":"流出"}
+
+    ],
+    "chartsRightBottom":[
+      {"serverNum":150},
+      {"use":150,"percent":"2/5"},
+      {"use":50,"percent":"110/320"},
+      {"use":50,"percent":"40/400"}
+    ]
+  }
+}

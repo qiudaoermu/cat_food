@@ -1,0 +1,60 @@
+.dialog-model-hidden{
+  display: none
+}
+.dialog-model{
+  position:absolute;
+  top:50%;
+  margin-top:-200px;
+  left:50%;
+  margin-left:-300px;
+  text-align:center;
+  border-radius:10px;
+  z-index:9999999999;
+  opacity:1;
+  overflow:hidden;
+  color:#fff;
+  animation:mymove .5s ;
+  animation-fill-mode:forwards;
+  -webkit-animation:mymove .5s ;
+  -webkit-animation-fill-mode:forwards;
+}
+@keyframes mymove
+{
+from {width:0px;height:0px;}
+to {width:600px;height:400px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {width:0px;height:0px;}
+to {width:600px;height:400px;}
+}
+.dialog-model-warm{
+
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  text-align:center;
+  border-radius:10px;
+  color:#fff;
+  z-index:9999999999;
+  opacity:1;
+  overflow:hidden;
+  animation:mymoveWarm .5s ;
+  animation-fill-mode:forwards;
+  -webkit-animation:mymoveWarm .5s ;
+  -webkit-animation-fill-mode:forwards;
+
+}
+
+@keyframes mymoveWarm
+{
+from {width:0px;height:0px;}
+to {width:300px;height:150px;}
+}
+
+@-webkit-keyframes mymoveWarm /*Safari and Chrome*/
+{
+from {width:0px;height:0px;}
+to {width:300px;height:150px;}
+}
