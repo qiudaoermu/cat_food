@@ -59,7 +59,9 @@ class EchartsPie extends React.Component {
 
           return (
 
-              <div id={this.state.id} style={this.props.routes?this.props.routes[1].styleSet:this.props.styleSet} className='ehcarts-pie'>
+              <div id={this.state.id}
+              style={this.props.routes?this.props.routes[1].styleSet:this.props.styleSet}
+               className='ehcarts-pie'>
 
               </div>
           )

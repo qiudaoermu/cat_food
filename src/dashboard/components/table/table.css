@@ -1,0 +1,18 @@
+
+
+.base-table{
+    font-size: 14px;
+    border:1px solid #ddd;
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0;
+    padding:0;
+    font-size: 34px;
+    border:none;
+    text-align: center;
+
+}
+.base-table tr td{
+    border: 1px solid #000  ;
+    padding:0;
+}

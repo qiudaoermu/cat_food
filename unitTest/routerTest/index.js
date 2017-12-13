@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory,Link} from 'react-router';
 
 import './maintest.css'
+import img from './backImage/212391.png'
+
 
 
 import echartsLine from '../../src/dashboard/components/echarts-line'
@@ -10,9 +12,11 @@ import echartPie from '../../src/dashboard/components/echarts-pie'
 import hchartGuageActive from '../../src/dashboard/components/hchart-gauge-active'
 import hchartGuageAdvanc from '../../src/dashboard/components/hchart-gauge-advanced'
 import hchartPie from '../../src/dashboard/components/hcharts-pie'
+import table from '../../src/dashboard/components/table'
 import number from '../../src/dashboard/components/Number'
 import svgProgress from '../../src/dashboard/components/svg-progress'
 import MyDialog from  '../../src/dashboard/components/warmMassage'
+
 const Home = () => (
   <div>
     <h2>
@@ -25,11 +29,34 @@ const Home = () => (
          <li className='number'><Link to="/number">number</Link></li>
          <li className='svgProgress'><Link to="/svgProgress">svgProgress</Link></li>
          <li className='MyDialog'><Link to="/MyDialog">MyDialog</Link></li>
+         <li className='table'><Link to="/table">table</Link></li>
       </ul>
     </h2>
   </div>
 )
 
+        const columns = [
+            { key:'序列号',label:'serial',cell:props=><img src={props}/>},
+            { key:'名字',label:'name',cell:props=><span>{props}</span>},
+
+            { key:'age',label:'Gender' },
+            {key:'百分比',label:'percent',cell:props=><span>{props}</span>}
+
+        ];
+        const data= [
+            {
+                serial:img,
+                name: 'Mike Qiao',
+                age: 23,
+                percent:50
+            },
+            {
+                serial:img,
+                name: 'Mike2 Qiao',
+                age: 23,
+                percent:50
+            }
+        ];
 const BasicRouter = () => (
 
 	<Router history={hashHistory}>
@@ -59,6 +86,15 @@ const BasicRouter = () => (
          type={'red'}
          message = {'hello'}
          />
+        <Route path="/table" component={table}
+
+                  styleSet={{width:600,height:300}}
+                  data={data}
+                  columns={columns}
+
+        />
+
+
     </div>
 	</Router>
 

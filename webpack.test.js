@@ -30,12 +30,5 @@ module.exports = merge(common, {
         port: 6700,
 
         hot: true // 服务器热加载
-    },
-    plugins:[
-      new BundleAnalyzerPlugin({
-          analyzerHost: '127.0.0.1',
-          analyzerPort: 9999,
-          openAnalyzer: false
-      })
-    ]
+    }
 });
