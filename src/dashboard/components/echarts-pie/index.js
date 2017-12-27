@@ -1,7 +1,8 @@
-/* eslint-disable */
+﻿/* eslint-disable */
 import React from 'react'
 
 import Util from '../../utils/util'
+console.log('biaud')
 
 //var UtilEd = new Util()
 let idNumberEchartsPie = 1
